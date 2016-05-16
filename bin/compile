@@ -3,6 +3,7 @@
 
 
 sudo mount -o remount,size=256m /dev/shm
+sudo apt-get install vim
 
 
 ### Configure environment
