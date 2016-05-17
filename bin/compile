@@ -2,8 +2,9 @@
 # bin/compile <build-dir> <cache-dir> <env-dir>
 
 echo 'HOLAAAAAAA'
-sudo echo 'none      /dev/shm        tmpfs   defaults,size=8G        0 0' > /etc/fstab
-sudo mount -o remount /dev/shm
+mount -O remount,rw /
+echo 'none      /dev/shm        tmpfs   defaults,size=8G        0 0' > /etc/fstab
+mount -o remount /dev/shm
 cat /etc/fstab
 
 ### Configure environment
